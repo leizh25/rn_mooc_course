@@ -18,6 +18,7 @@ import Anim4 from './src/anim/Anim4';
 import Anim5 from './src/anim/Anim5';
 import Anim6 from './src/anim/Anim6';
 import Anim7 from './src/anim/Anim7';
+import Anim8 from './src/anim/Anim8';
 const App = () => {
   return (
     <>
@@ -39,7 +40,8 @@ const App = () => {
       {/* <Anim4 /> */}
       {/* <Anim5 /> */}
       {/* <Anim6 /> */}
-      <Anim7 />
+      {/* <Anim7 /> */}
+      <Anim8 />
     </>
   );
 };
