@@ -20,6 +20,7 @@ import Anim6 from './src/anim/Anim6';
 import Anim7 from './src/anim/Anim7';
 import Anim8 from './src/anim/Anim8';
 import Anim9 from './src/anim/Anim9';
+import Anim10 from './src/anim/Anim10';
 const App = () => {
   return (
     <>
@@ -43,7 +44,8 @@ const App = () => {
       {/* <Anim6 /> */}
       {/* <Anim7 /> */}
       {/* <Anim8 /> */}
-      <Anim9 />
+      {/* <Anim9 /> */}
+      <Anim10 />
     </>
   );
 };
