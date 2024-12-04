@@ -1,11 +1,16 @@
 import { Dimensions, Image, StyleSheet, Text, View } from 'react-native'
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import ThemeContext from '../context/ThemeContext'
 import withFloatButton from './withFloatButton'
 const InfoView = () => {
     const theme = useContext(ThemeContext)
     console.log('theme: ', theme);
     const styles = theme === "dark" ? darkStyles : lightStyles
+
+    useEffect(() => {
+        console.log("InfoView加载完成");
+
+    }, [])
     return (
         <View style={styles.root}>
             <Image source={require("../assets/images/avatar.png")} style={styles.avatar} />

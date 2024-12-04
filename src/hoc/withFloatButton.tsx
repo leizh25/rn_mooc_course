@@ -1,9 +1,24 @@
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import icon_add from "../assets/images/icon_add.png"
 type IReactComponent = React.ClassicComponentClass | React.ComponentClass | React.FunctionComponent | React.ForwardRefExoticComponent<any> | React.FC
 const withFloatButton = <T extends IReactComponent>(OriginView: T): T => {
     const HOCView = (props: any) => {
+        useEffect(() => {
+            console.log("高阶组件加载完成");
+            reportDeviceInfo()
+        }, [])
+        const reportDeviceInfo = () => {
+            //模拟上报
+            const deviceInfo = {
+                deviceId: "1",
+                deviceName: "aaa",
+                model: "vvv",
+                storage: "128",
+                ip: "1.1.1.1"
+            }
+            // 上报
+        }
         return (
             <>
                 <OriginView {...props} />
