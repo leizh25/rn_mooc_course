@@ -22,6 +22,7 @@ import Anim8 from './src/anim/Anim8';
 import Anim9 from './src/anim/Anim9';
 import Anim10 from './src/anim/Anim10';
 import RootView from './src/context/RootView';
+import InfoView from "./src/hoc/InfoView"
 const App = () => {
   return (
     <>
@@ -47,7 +48,8 @@ const App = () => {
       {/* <Anim8 /> */}
       {/* <Anim9 /> */}
       {/* <Anim10 /> */}
-      <RootView />
+      {/* <RootView /> */}
+      <InfoView />
     </>
   );
 };
