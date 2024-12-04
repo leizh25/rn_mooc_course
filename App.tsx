@@ -23,6 +23,7 @@ import Anim9 from './src/anim/Anim9';
 import Anim10 from './src/anim/Anim10';
 import RootView from './src/context/RootView';
 import InfoView from "./src/hoc/InfoView"
+import MemoPage from './src/memo/MemoPage';
 const App = () => {
   return (
     <>
@@ -49,7 +50,8 @@ const App = () => {
       {/* <Anim9 /> */}
       {/* <Anim10 /> */}
       {/* <RootView /> */}
-      <InfoView />
+      {/* <InfoView /> */}
+      <MemoPage />
     </>
   );
 };
