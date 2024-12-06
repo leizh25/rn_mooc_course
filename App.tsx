@@ -24,6 +24,7 @@ import Anim10 from './src/anim/Anim10';
 import RootView from './src/context/RootView';
 import InfoView from "./src/hoc/InfoView"
 import MemoPage from './src/memo/MemoPage';
+import RefDemo from './src/ref/RefDemo';
 const App = () => {
   return (
     <>
@@ -51,7 +52,8 @@ const App = () => {
       {/* <Anim10 /> */}
       {/* <RootView /> */}
       {/* <InfoView /> */}
-      <MemoPage />
+      {/* <MemoPage /> */}
+      <RefDemo />
     </>
   );
 };
