@@ -1,14 +1,19 @@
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native'
 import React, { useRef } from 'react'
-import CustomInput from './CustomInput'
+import CustomInput, { CustomInputRef } from './CustomInput'
 
 const RefDemo = () => {
-    const inputRef = useRef<TextInput>(null)
+    const inputRef = useRef<CustomInputRef>(null)
     return (
         <View style={styles.root}>
-            <Button title='点我' onPress={() => {
+            <Button title='聚焦' onPress={() => {
                 //让输入框聚焦
-                inputRef.current?.focus()
+                inputRef.current?.customFocus()
+            }} />
+            <Button title='失焦' onPress={() => {
+                //让输入框失焦
+                inputRef.current?.customBlur()
+
             }} />
             <CustomInput ref={inputRef} />
         </View>
